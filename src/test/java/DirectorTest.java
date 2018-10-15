@@ -54,4 +54,10 @@ public class DirectorTest {
     public void canPayBonus(){
         assertEquals(600.00, director.payBonus(),0.01);
     }
+
+    @Test
+    public void canChangeName(){
+        director.setName("Allan");
+        assertEquals("Allan", director.getName());
+    }
 }

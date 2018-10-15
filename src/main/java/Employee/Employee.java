@@ -15,6 +15,12 @@ public class Employee {
         return this.name;
     }
 
+    public void setName(String name) {
+        if (name != null){
+        this.name = name;
+        }
+    }
+
     public int getNINumber(){
         return this.NINumber;
     }

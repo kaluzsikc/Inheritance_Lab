@@ -44,4 +44,10 @@ public class DeveloperTest {
     public void canPayBonus(){
         assertEquals(300, developer.payBonus(),0.01);
     }
+
+    @Test
+    public void canChangeName(){
+        developer.setName("Allan");
+        assertEquals("Allan", developer.getName());
+    }
 }

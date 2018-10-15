@@ -19,6 +19,12 @@ public class DatabaseAdminTest {
     }
 
     @Test
+    public void canChangeName(){
+        databaseAdmin.setName("Allan");
+        assertEquals("Allan", databaseAdmin.getName());
+    }
+
+    @Test
     public void hasNINumber(){
         assertEquals(1234567, databaseAdmin.getNINumber());
     }
